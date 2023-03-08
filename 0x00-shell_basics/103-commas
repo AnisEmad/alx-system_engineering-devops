@@ -1,0 +1,2 @@
+#!/bin/bash
+ls -pda . .. *,* | sort -f | sed '2s/^/\n/'
