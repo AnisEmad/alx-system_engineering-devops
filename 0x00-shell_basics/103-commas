@@ -1,2 +1,3 @@
 #!/bin/bash
-ls -pda . .. *,* | sort -f | sed '2s/^/\n/'
+ls -pd .[a-zA-Z0-9]* [a-zA-Z0-9]* | sed '1!G;h;$!d' | tr '\n' ',' | sed 's/,$/\n/; s/\/,/\//g'
+
