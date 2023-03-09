@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -type d -name 'hello' -exec chmod ugo+x {} \;
+find ./hello -type d -exec chmod ogu+x {} +
