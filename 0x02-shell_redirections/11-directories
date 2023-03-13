@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -mindepth 1 -type d -print0 | wc -l
+find . -type d \( -name "*" -o -name ".*" \) -print0 | tr -dc '\0' | wc -l
