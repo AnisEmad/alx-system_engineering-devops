@@ -1,0 +1,2 @@
+#!/bin/bash
+echo $PATH | tr -cd ':' | wc -c | xargs -I {} expr {} + 1
