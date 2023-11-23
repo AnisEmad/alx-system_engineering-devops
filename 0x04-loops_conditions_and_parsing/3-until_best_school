@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # This script is displaying "Best School" 10 times
-cnt=1
+cnt=0
 until [ $cnt -eq 10 ]; do
     echo "Best School"
     ((cnt++))
