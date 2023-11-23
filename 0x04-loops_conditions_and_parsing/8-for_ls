@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+#this script is for displaying the content of the dircotry
+list=$ls
+for Name in $list; do
+    echo "${Name#*-}"
+done
