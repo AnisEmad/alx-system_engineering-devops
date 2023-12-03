@@ -4,7 +4,7 @@
 # Check if the argument matches the regular expression
 def match_school?(input)
     # Regular expression to match the word "School"
-    puts ARGV[0].scan(/(?<!\s)\b\d{10}\b/).join
+    puts ARGV[0].scan(/[A-Z]+/).join
   end
   
   # Get the command line argument
